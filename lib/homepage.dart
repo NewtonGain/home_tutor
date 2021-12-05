@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_tutor/teacher_login.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -22,7 +23,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         backgroundColor: Colors.purple,
         body: Center(
+          
           child: Row(
+            
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Card(
@@ -31,7 +34,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Row(
                   children: [
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => TeacherLogin(),
+                          ),
+                        );
+                      },
                       child: Text(
                         'Teacher Login',
                         style: TextStyle(

@@ -31,15 +31,17 @@ class _SplashState extends State<Splash> {
     return Scaffold(
       backgroundColor: Colors.blueAccent.shade200,
       body: SafeArea(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              CircleAvatar(
-                radius: 150,
-                backgroundImage: AssetImage('assets/1.png'),
-              ),
-            ],
+        child: Container(
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CircleAvatar(
+                  radius: 150,
+                  backgroundImage: AssetImage('assets/1.png'),
+                ),
+              ],
+            ),
           ),
         ),
       ),
