@@ -17,7 +17,7 @@ class _MyHomePageState extends State<MyHomePage> {
           centerTitle: true,
           title: Text(
             'Home Tutor',
-            style: TextStyle(fontSize: 29),
+            style: TextStyle(fontSize: 29, fontWeight: FontWeight.bold),
           ),
         ),
         backgroundColor: Colors.purple,
@@ -26,28 +26,38 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Card(
-                elevation: 7,
                 margin: EdgeInsets.all(20),
-                child: Text(
-                  'Teacher Login',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blue),
+                elevation: 5,
+                child: Row(
+                  children: [
+                    TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        'Teacher Login',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(20),
-                child: Card(
-                  elevation: 7,
-                  margin: EdgeInsets.all(20),
-                  child: Text(
-                    'Gurdiun Login',
-                    style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.red),
-                  ),
+              Card(
+                elevation: 5,
+                child: Row(
+                  children: [
+                    TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        'Student Login',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    )
+                  ],
                 ),
               ),
             ],
