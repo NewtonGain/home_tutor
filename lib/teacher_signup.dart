@@ -8,7 +8,7 @@ class TeacherLogin extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Teacher Login Page'),
+          title: Text('Teacher SignUp'),
         ),
         backgroundColor: Colors.deepPurple,
         body: Container(
