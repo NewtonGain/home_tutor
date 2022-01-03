@@ -21,7 +21,7 @@ class _SplashState extends State<Splash> {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
-        builder: (context) => MyHomePage(),
+        builder: (context) => HomePage(),
       ),
     );
   }
@@ -33,14 +33,9 @@ class _SplashState extends State<Splash> {
       body: SafeArea(
         child: Container(
           child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CircleAvatar(
-                  radius: 150,
-                  backgroundImage: AssetImage('assets/1.png'),
-                ),
-              ],
+            child: CircleAvatar(
+              radius: 150,
+              backgroundImage: AssetImage('assets/images/1.png'),
             ),
           ),
         ),
