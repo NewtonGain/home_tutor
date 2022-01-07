@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'widgets/splash.dart';
-
-
 
 void main() => runApp(MyApp());
 
