@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_tutor/body.dart';
+import 'package:home_tutor/widgets/login/components/Screens/login/login.dart';
 import 'navigation_bottom.dart';
 
 class HomePage extends StatelessWidget {
@@ -16,9 +17,23 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.teal,
-      appBar: newMethod(),
+      appBar: AppBar(
+        actions: [
+          GestureDetector(
+            onTap: () => {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => LoginScreen()))
+            },
+            child: Icon(
+              Icons.logout_rounded,
+              size: 25,
+            ),
+          ),
+        ],
+      ),
       drawer: Drawer(
         elevation: 5.0,
         backgroundColor: Colors.cyan,
@@ -57,23 +72,6 @@ class HomePage extends StatelessWidget {
       ),
       body: Body(),
       bottomNavigationBar: ButtonNavigation(),
-    );
-  }
-
-  AppBar newMethod() {
-    return AppBar(
-      actions: [
-        TextButton(
-          onPressed: () {},
-          child: Text(
-            'LogOut',
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ),
-        ),
-      ],
-      elevation: 0.0,
     );
   }
 }
