@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_tutor/body.dart';
-
 import 'navigation_bottom.dart';
-
 
 class HomePage extends StatelessWidget {
   Widget drawerList(String text, Function() onpressed) {
@@ -64,6 +62,17 @@ class HomePage extends StatelessWidget {
 
   AppBar newMethod() {
     return AppBar(
+      actions: [
+        TextButton(
+          onPressed: () {},
+          child: Text(
+            'LogOut',
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+        ),
+      ],
       elevation: 0.0,
     );
   }

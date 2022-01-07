@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_tutor/widgets/navigation_bottom.dart';
 
-
 import 'newton.dart';
 
 class MiaParaList extends StatefulWidget {
@@ -87,7 +86,6 @@ class _MiaParaListState extends State<MiaParaList> {
                     height: 20,
                   ),
                   locationList(Colors.red, '2', () => null),
-                 
                 ],
               ),
             ),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_tutor/widgets/navigation_bottom.dart';
 
-
 void main() => runApp(Newton());
 
 class Newton extends StatelessWidget {
