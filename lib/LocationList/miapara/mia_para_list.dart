@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_tutor/LocationList/Bed-Gram/BedGram_Teachers/mukul.dart';
 import 'package:home_tutor/widgets/navigation_bottom.dart';
 
 import 'newton.dart';
@@ -12,14 +13,16 @@ class _MiaParaListState extends State<MiaParaList> {
   Widget locationList(Color color, String text, Function() onpressed) {
     return FlatButton(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-      color: color,
+      color: Colors.black26,
       onPressed: onpressed,
       child: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Text(
           text,
           style: TextStyle(
-              color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
+            color: Colors.black,
+            fontSize: 20,
+          ),
         ),
       ),
     );
@@ -28,7 +31,6 @@ class _MiaParaListState extends State<MiaParaList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.teal,
       appBar: AppBar(
         title: Text(
           'Mia Para Teachers',
@@ -46,7 +48,7 @@ class _MiaParaListState extends State<MiaParaList> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   locationList(
-                    Colors.blue,
+                    Colors.black26,
                     'Newton Gain',
                     () => Navigator.push(
                       context,
@@ -56,36 +58,58 @@ class _MiaParaListState extends State<MiaParaList> {
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
+                  locationList(
+                    Colors.black26,
+                    'Mukul Biswas',
+                    () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Mukul()),
+                    ),
                   ),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.black26, 'add', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.black26, 'add', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.black26, 'add', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.black26, 'add', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.black26, 'add', () => null),
                 ],
               ),
             ),

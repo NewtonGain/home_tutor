@@ -1,9 +1,7 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
+import 'package:home_tutor/LocationList/Bed-Gram/BedGram_Teachers/mukul.dart';
 import 'package:home_tutor/LocationList/miapara/newton.dart';
 import 'package:home_tutor/widgets/navigation_bottom.dart';
-
 
 class BedGramList extends StatefulWidget {
   @override
@@ -21,7 +19,9 @@ class _BedGramListState extends State<BedGramList> {
         child: Text(
           text,
           style: TextStyle(
-              color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
+            color: Colors.black,
+            fontSize: 20,
+          ),
         ),
       ),
     );
@@ -31,18 +31,20 @@ class _BedGramListState extends State<BedGramList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BedGram Teachers'),
+        centerTitle: true,
+        title: Text('BedGram Teachers', style: TextStyle(fontSize: 28)),
       ),
       body: SingleChildScrollView(
         child: SafeArea(
           child: Center(
             child: Container(
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   locationList(
-                    Colors.blue,
+                    Colors.black26,
                     'Newton Gain',
                     () => Navigator.push(
                       context,
@@ -52,55 +54,58 @@ class _BedGramListState extends State<BedGramList> {
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
+                  locationList(
+                    Colors.black26,
+                    'Mukul Biswas',
+                    () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Mukul()),
+                    ),
                   ),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.black26, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
+                  locationList(Colors.black26, 'add', () => null),
                 ],
               ),
             ),
